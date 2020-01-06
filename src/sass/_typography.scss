@@ -1,0 +1,79 @@
+html.rykn0wxx, body.mudhead {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  min-height: 100%; // [2]
+  -webkit-text-size-adjust: 100%; // [3]
+  -ms-text-size-adjust: 100%; // [3]
+  -webkit-font-smoothing: antialiased; // [4]
+  -moz-osx-font-smoothing: grayscale; // [4]
+}
+
+.rykn0wxx {
+  .md-display {
+    &-4 {
+      font-size: $display-4-font-size-base;
+      line-height: $display-4-font-size-base;
+      letter-spacing: -0.010em;
+      font-weight: 300;
+    }
+    &-3 {
+      font-size: $display-3-font-size-base;
+      line-height: $display-3-font-size-base;
+      letter-spacing: -0.005em;
+      font-weight: 400;
+    }
+    &-2 {
+      font-size: $display-2-font-size-base;
+      line-height: rem(6.4);
+      font-weight: 400;
+    }
+    &-1 {
+      font-size: $display-1-font-size-base;
+      line-height: rem(4);
+      font-weight: 400;
+    }
+  }
+  .md-headline {
+    font-size: $headline-font-size-base;
+    line-height: rem(3.2);
+    font-weight: 400;
+  }
+  .md-title {
+    @include md-title();
+  }
+  .md-subhead {
+    @include md-subhead();
+  }
+  .md-body-1 {
+    @include md-body-1();
+  }
+  .md-body-2 {
+    @include md-body-2();
+  }
+  .md-caption {
+    font-size: $caption-font-size-base;
+    letter-spacing: 0.020em;
+  }
+  .md-button, button, .btn {
+    letter-spacing: 0.010em;
+  }
+  h1, h1, h3, h4, h5, h6 {
+    line-height: 1.2;
+    color: inherit;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  &, button, select, textarea, input {
+    font-family: $font-family;
+  }
+  select, button, textarea, input {
+    font-size: 100%;
+  }
+  a {
+    text-decoration: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
