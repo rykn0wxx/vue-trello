@@ -1,8 +1,0 @@
-#!/usr/bin/sh
-
-function run_p1 {
-	export PS1='${debian_chroot:+($debian_chroot)}'
-}
-
-run_p1
-unset run_p1
